@@ -33,7 +33,35 @@ struct SetGame {
                 }
             }
         }
-//        cards.shuffle()
+        cards.shuffle()
+    }
+    
+    // see viewModel.dealThreeMore first scenario for usage
+    mutating func removingMatchedSet() {
+        for selected in selection {
+            for index in cards.indices {
+                if(cards[index].id == selected.id) {
+                    cards.remove(at: index)
+                    break
+                }
+            }
+        }
+        selection = []
+        matchStatus = 0
+    }
+    
+    mutating func resetSelection() {
+        // three existing selection is not a matching
+        for selected in selection {
+            for index in cards.indices {
+                if(cards[index].id == selected.id) {
+                    cards[index].isChosen = false
+                }
+            }
+        }
+        // reset selection array to be empty
+        selection = []
+        matchStatus = 0
     }
     
     mutating func choose(_ card: Card) {
@@ -45,34 +73,13 @@ struct SetGame {
                         return
                     }
                 }
-                print("three=== \(selection)")
-                updateStatus()
                 // check if previous three cards are a matching
                 if checkSetIfMatching() {
                     // remove the matched three cards from the card array
-                    print("matched, removing ---")
-                    for selected in selection {
-                        for index in cards.indices {
-                            if(cards[index].id == selected.id) {
-                                cards.remove(at: index)
-                                break
-                            }
-                        }
-                    }
+                    removingMatchedSet()
                 } else {
-                    print("not matched, removing ---")
-                    // three existing selection is not a matching
-                    for selected in selection {
-                        for index in cards.indices {
-                            if(cards[index].id == selected.id) {
-                                cards[index].isChosen = false
-                            }
-                        }
-                    }
+                    resetSelection()
                 }
-                // reset selection array to be empty
-                selection = []
-                updateStatus()
             } else {
                 // selection cards less than three
                 // first check if cards was already been chosen, if yes then de-select

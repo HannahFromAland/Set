@@ -16,6 +16,7 @@
 		41ABD15F2C56F0B600ABB33F /* SetGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABD15E2C56F0B600ABB33F /* SetGameViewModel.swift */; };
 		41ABD1612C56F30100ABB33F /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABD1602C56F30100ABB33F /* AspectVGrid.swift */; };
 		41ABD1632C57378700ABB33F /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABD1622C57378700ABB33F /* Diamond.swift */; };
+		41ABD1662C588F7A00ABB33F /* Squiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABD1652C588F7A00ABB33F /* Squiggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		41ABD1602C56F30100ABB33F /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 		41ABD1622C57378700ABB33F /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 		41ABD1642C5768CC00ABB33F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		41ABD1652C588F7A00ABB33F /* Squiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squiggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				41ABD1642C5768CC00ABB33F /* README.md */,
 				41ABD15A2C56DBC800ABB33F /* CardView.swift */,
 				41ABD15C2C56E17900ABB33F /* SetGame.swift */,
+				41ABD1652C588F7A00ABB33F /* Squiggle.swift */,
 				41ABD1622C57378700ABB33F /* Diamond.swift */,
 				41ABD14C2C56DA7000ABB33F /* SetApp.swift */,
 				41ABD14E2C56DA7000ABB33F /* SetGameView.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				41ABD14F2C56DA7000ABB33F /* SetGameView.swift in Sources */,
 				41ABD15B2C56DBC800ABB33F /* CardView.swift in Sources */,
+				41ABD1662C588F7A00ABB33F /* Squiggle.swift in Sources */,
 				41ABD1612C56F30100ABB33F /* AspectVGrid.swift in Sources */,
 				41ABD1632C57378700ABB33F /* Diamond.swift in Sources */,
 				41ABD15D2C56E17900ABB33F /* SetGame.swift in Sources */,
